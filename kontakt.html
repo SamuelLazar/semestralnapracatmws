@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbalové Momenty - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-content-wrapper">
+    <header class="header">
+        <div class="logo">⚽Football Moments⚽</div>
+        <nav>
+            <a href="index.html">Domov</a>
+            <a href="momenty.html">Momenty</a>
+            <a href="legendy.html">Legendy</a>
+            <a href="kontakt.html" class="active">Kontakt</a>
+            <button id="darkModeToggle" class="dark-mode-toggle" title="Prepnúť tmavý režim">🌙</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Kontaktujte Nás</h1>
+        <p>Napíšte nám váš obľúbený futbalový moment, ktorý by sme mali pridať.</p>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Vaše Meno:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Váš Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Váš Odkaz/Moment:</label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Odoslať Odkaz</button>
+        </form>
+
+        <section id="formDataDisplay" class="info-section" style="display: none;">
+            <h2>Váš Odkaz Bol Prijatý (Dočasné Zobrazenie)</h2>
+            <p>Ďakujeme za vašu správu. Nižšie sú údaje, ktoré ste nám poslali:</p>
+            <ul>
+                <li><strong>Meno:</strong> <span id="display-name"></span></li>
+                <li><strong>Email:</strong> <span id="display-email"></span></li>
+                <li><strong>Odkaz:</strong> <span id="display-message"></span></li>
+            </ul>
+        </section>
+
+    </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Samuel Lazar | Všetky práva vyhradené. |</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

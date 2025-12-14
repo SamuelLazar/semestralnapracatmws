@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbalové Momenty - Legendy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-content-wrapper">
+
+    <header class="header">
+        <div class="logo">⚽Football Moments⚽</div>
+        <nav>
+            <a href="index.html">Domov</a>
+            <a href="momenty.html">Momenty</a>
+            <a href="legendy.html" class="active">Legendy</a>
+            <a href="kontakt.html">Kontakt</a>
+            <button id="darkModeToggle" class="dark-mode-toggle" title="Prepnúť tmavý režim">🌙</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Futbalové Legendy</h1>
+
+        <button id="toggleInfoBtn" class="btn secondary-btn" onclick="toggleDetailSection()">Schovať podrobnosti</button>
+
+        <section id="detailSection" class="info-section">
+            <h2>Ikony svojho času</h2>
+            <p>Títo hráči neboli len talentovaní, ale mali aj neskutočnú mentalitu, ktorá ich doviedla k nesmrteľnosti. Preskúmajte ich profily.</p>
+        </section>
+
+        <section class="grid-layout">
+
+            <div class="card legend-card fade-in">
+                <img src="Pele.png" alt="Pelé" class="legend-photo">
+                <h3>1. Pelé</h3>
+                <p>Brazílsky kráľ futbalu. Trojnásobný majster sveta.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Narodený v roku 1940. Oficiálne strelil 757 gólov v 812 zápasoch.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-1">
+                <img src="Cruyff.png" alt="Johan Cruyff" class="legend-photo">
+                <h3>2. Johan Cruyff</h3>
+                <p>Ikona Total Football. Majster s Ajaxom a Barcelonou.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Autor slávnej „Cruyff Turn“. Jeho filozofia ovplyvnila moderný futbal.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-2">
+                <img src="Beckenbauer.png" alt="Franz Beckenbauer" class="legend-photo">
+                <h3>3. Franz Beckenbauer</h3>
+                <p>Cisár. Jeden z dvoch, ktorí vyhrali MS ako hráč aj tréner.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Priekopník pozície Libero. Vyhral 4× Ligu Majstrov s Bayernom.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-3">
+                <img src="Maradona.png" alt="Diego Maradona" class="legend-photo">
+                <h3>4. Diego Maradona</h3>
+                <p>Argentínsky boh futbalu. Majster sveta 1986.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Hviezda SSC Neapol. Získal dva tituly Serie A.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-4">
+                <img src="DiStefano.png" alt="Alfredo Di Stéfano" class="legend-photo">
+                <h3>5. Alfredo Di Stéfano</h3>
+                <p>Blond šíp. Ikona Realu Madrid 50. rokov.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Vyhral 5× Európsky pohár majstrov. Hral za Argentínu, Kolumbiu aj Španielsko.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in">
+                <img src="Best.png" alt="George Best" class="legend-photo">
+                <h3>6. George Best</h3>
+                <p>Driblingový mág Manchestru United.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Víťaz EPM 1968. Držiteľ Zlatej lopty 1968.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-1">
+                <img src="Zidane.png" alt="Zinedine Zidane" class="legend-photo">
+                <h3>7. Zinedine Zidane</h3>
+                <p>Zizou. Majster sveta 1998 a tréner 3× LM.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Držiteľ Zlatej lopty 1998. Gól vo finále LM 2002 je ikonický.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-2">
+                <img src="Eusebio.png" alt="Eusébio" class="legend-photo">
+                <h3>8. Eusébio</h3>
+                <p>Čierna perla. Ikona Benficy a MS 1966.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Najlepší strelec MS 1966. Držiteľ Zlatej lopty 1965.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-3">
+                <img src="CristianoRonaldo.png" alt="Cristiano Ronaldo" class="legend-photo">
+                <h3>9. Cristiano Ronaldo</h3>
+                <p>CR7. Fenomén modernej éry.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> 5× víťaz LM. Najlepší strelec v histórii LM.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-4">
+                <img src="Messi.png" alt="Lionel Messi" class="legend-photo">
+                <h3>10. Lionel Messi</h3>
+                <p>La Pulga. Majster sveta 2022.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> 7× Zlatá lopta. Rekordy v Barcelone aj v reprezentácii.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in">
+                <img src="Maldini.png" alt="Paolo Maldini" class="legend-photo">
+                <h3>11. Paolo Maldini</h3>
+                <p>Kapitán AC Miláno. Ikona obrany.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> 25 rokov v AC Miláno. 5× víťaz LM.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+            <div class="card legend-card fade-in delay-1">
+                <img src="Gullit.png" alt="Ruud Gullit" class="legend-photo">
+                <h3>12. Ruud Gullit</h3>
+                <p>Holandská legenda. Ikona AC Miláno.</p>
+                <div class="hidden-details">
+                    <p><strong>Detaily:</strong> Držiteľ Zlatej lopty 1987. Majster Európy 1988.</p>
+                </div>
+                <button class="btn read-more-btn" onclick="toggleLegendDetails(this)">Zobraziť Viac</button>
+            </div>
+
+        </section>
+    </main>
+
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Samuel Lazar | Všetky práva vyhradené. |</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

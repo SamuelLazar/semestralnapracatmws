@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbalové Momenty - Ikonické Zápasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-content-wrapper">
+
+        <header class="header">
+            <div class="logo">⚽Football Moments⚽</div>
+            <nav>
+                <a href="index.html">Domov</a>
+                <a href="momenty.html" class="active">Momenty</a>
+                <a href="legendy.html">Legendy</a>
+                <a href="kontakt.html">Kontakt</a>
+                <button id="darkModeToggle" class="dark-mode-toggle" title="Prepnúť tmavý režim">🌙</button>
+            </nav>
+        </header>
+
+        <section class="container">
+            <h1>Vyhľadávanie Ikonických Momentov</h1>
+            <p class="subtitle">Zaznamenané okamihy plné emócií a výnimočných výkonov. (Celkom 12)</p>
+
+            <input type="text" id="searchInput" placeholder="Zadajte rok, hráča alebo udalosť..." class="search-input">
+
+            <section id="momentsList" class="grid-layout moments-list">
+                
+                <div class="moment-card fade-in" data-tags="Maradona 1986 Gól Ruky kontroverzia">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>1. Gól Ruky (1986)</h3>
+                    <p>Argentína vs. Anglicko. Diego Maradona a obrovský moment kontroverzie. Dráma a futbalová história.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-ccNkksrfls"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-1" data-tags="Zidane 2002 Finále Volej gól technika">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>2. Volej Zidana (2002)</h3>
+                    <p>Finále Ligy Majstrov. Gól, ktorý sa stal synonymom elegancie a dokonalej techniky.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/z6RNUKiBU4w"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-2" data-tags="Iniesta 2010 Finále WC víťazstvo predĺženie">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>3. Gól Iniestu (2010)</h3>
+                    <p>Španielsko vyhráva svoje prvé Majstrovstvá Sveta. Gól v predĺžení proti Holandsku. Ikonický futbalový moment.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/AZ8XSDtfewo"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-3" data-tags="Messi 2007 El Clásico hat-trick mladík rekord">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>4. Messiho Hat-trick (2007)</h3>
+                    <p>El Clásico. Mladý Lionel Messi šokuje svet a stanovuje rekord pre Barcelonu.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/tHphOng4kOg"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-4" data-tags="Liverpool 2005 Istanbul obrat finále dráma">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>5. Istanbulská Noc (2005)</h3>
+                    <p>Finále Ligy Majstrov. Neuveriteľný obrat Liverpoolu proti AC Milánu z 0:3 na víťazstvo 3:2 v penaltovom rozstrele.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/iJbDE6PKW2o"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="moment-card fade-in delay-5" data-tags="Brazília 1970 Pelé kráľ finále">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>6. Pelého Finále (1970)</h3>
+                    <p>Brazília na vrchole. Pelého ikonický gól hlavou vo finále Majstrovstiev sveta proti Taliansku.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/SMTt_lymJic"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-6" data-tags="Man Utd 1999 treble Solskjaer finále obrat">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>7. Magický Treble (1999)</h3>
+                    <p>Manchester United vyhráva Ligu Majstrov s gólmi v nadstavenom čase proti Bayernu Mníchov, Taktiež vyhráva ligu a FA Cup.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/mvDJvLPuWrQ"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-7" data-tags="Roberto Baggio 1994 penalta USA finále">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>8. Osudná Penalta (1994)</h3>
+                    <p>Finále Majstrovstiev sveta. Roberto Baggio a jeho nepremenená penalta, ktorá rozhodla o titule a taktiež o jeho živote.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/voT5W9Doa-s"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-8" data-tags="Leicester City 2016 titul prekvapenie Vardy">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>9. Leicester City (2016)</h3>
+                    <p>Najväčšie prekvapenie moderného futbalu. Zisk titulu Premier League absolútnym outsiderom.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TgrOvY6Zsok"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-9" data-tags="Ronaldinho 2005 FC Barcelona technika gól">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>10. Magické Nožničky (2005)</h3>
+                    <p>Ronaldinhova neopakovateľná akcia a gól, pri ktorom tlieskali aj súperi z Realu Madrid.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/DH_gBJT9bAg"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-10" data-tags="Dennis Bergkamp 1998 Holandsko gól technika">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>11. Bergkampov Dotyk (1998)</h3>
+                    <p>Gól Holandska proti Argentíne. Absolútne majstrovské spracovanie lopty a zakončenie.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/XsZkCFoqSBs"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="moment-card fade-in delay-11" data-tags="Steven Gerrard 2006 Fa Cup gól strela">
+                    <div class="top-line"></div>
+                        <div class="center-circle"></div>
+                    <h3>12. Gerrardov Gól (2006)</h3>
+                    <p>Finále FA Cupu. Gerrard vyrovnáva stav strelou z diaľky v poslednej minúte, aby poslal zápas do predĺženia.</p>
+                    <button class="btn" onclick="toggleVideo(this)">Pozrieť video</button>
+                    <div class="video-container hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/8uVF74OqZDY"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            
+            <p id="noResults" style="display: none; text-align: center; color: #ff5252;">Nenašli sa žiadne momenty zodpovedajúce vášmu vyhľadávaniu.</p>
+
+        </section>
+
+    </div> <footer class="footer">
+        <p>&copy; 2025 Samuel Lazar | Všetky práva vyhradené. |</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
